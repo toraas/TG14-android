@@ -30,7 +30,7 @@ public class ProgramMatchActivity extends ActionBarActivity {
 	private void getDataFromServer() {
 		TextView tv = (TextView)findViewById(R.id.textView1);
 		GetFromWeb showData = new GetFromWeb();
-		showData.setInputUrl("http://toraas.com/TG14-app/app-finals.txt");
+		showData.setInputUrl("The URL here");
 		try {
 			tv.setText(showData.getFromServer());
 		} catch (IOException e) {
