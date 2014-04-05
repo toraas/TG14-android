@@ -36,7 +36,7 @@ public class ProgramActivity extends ActionBarActivity {
 		TextView tv = (TextView)findViewById(R.id.textView1);
 		tv.setMovementMethod(new ScrollingMovementMethod());
 		GetFromWeb showData = new GetFromWeb();
-		showData.setInputUrl("The URL here");
+		showData.setInputUrl("http://toraas.com/TG14-app/app-program.txt");
 		try {
 			tv.setText(showData.getFromServer());
 		} catch (IOException e) {
