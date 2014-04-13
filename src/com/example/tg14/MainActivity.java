@@ -1,5 +1,7 @@
 package com.example.tg14;
 
+import com.toraas.tg14.R;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -19,9 +21,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        //Sets a new Title on the activity
-        setTitle("The Gathering 2014");
-        
         //Sets which content to view
         setContentView(R.layout.activity_main);
     }
@@ -40,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
     
     //The method called when button "Finaler" is clicked
     public void toTheFinals(View view) {
-    	Intent intent = new Intent(this, ProgramMatchActivity.class);        
+    	Intent intent = new Intent(this, CreativeActivity.class);        
         startActivity(intent);
     }
 }

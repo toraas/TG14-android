@@ -14,12 +14,12 @@ public class GetFromWeb {
 		
 		URL Url = new URL(inputUrl);
 		String returnString = "";
-		String[] returnThisArray = new String[100];
+		String[] returnThisArray = new String[400];
 	
 		// Read all the text returned by the server
 		BufferedReader urlReader = new BufferedReader(new InputStreamReader(Url.openStream()));
 		
-		for(int i = 0 ; i < 99 ; i++) {
+		for(int i = 0 ; i < 399 ; i++) {
 			returnThisArray[i] = urlReader.readLine();
 			if(returnThisArray[i] != null) returnString += returnThisArray[i] + "\n";
 		}

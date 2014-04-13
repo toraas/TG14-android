@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background4" >
+        android:background="@drawable/app_background" >
 
         <Button
             android:id="@+id/button2"
@@ -17,18 +17,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/button1"
-            android:layout_marginTop="84dp"
-            android:background="@drawable/button_kart_chunk"
+            android:background="@drawable/button_background_map"
+            android:minHeight="48dp"
             android:onClick="toTheMap" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/button1"
-            android:background="@drawable/button_finaler_chunk"
-            android:onClick="toTheFinals" />
 
         <Button
             android:id="@+id/button1"
@@ -36,9 +27,18 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="63dp"
-            android:background="@drawable/button_program_chunk"
+            android:layout_marginTop="74dp"
+            android:background="@drawable/button_background_program"
             android:onClick="toTheProgram" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button2"
+            android:background="@drawable/button_background_creative"
+            android:onClick="toTheFinals" />
 
     </RelativeLayout>
 
