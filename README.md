@@ -1,4 +1,4 @@
 TG14-android
 ============
 
-Android-app that will be available in Google Play soon.
+"TG14-Program"-app is available in Google Play now.
